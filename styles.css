@@ -1,4 +1,14 @@
-.output{
+body {
+  margin-left: 50%;
+  margin-top: 10%;
+}
+
+h1 {
+  margin-bottom: 2%;
+}
+
+.output {
+  margin-bottom: 2%;
   width: 10px;
   height: 10px;
   color: black;

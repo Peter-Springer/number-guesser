@@ -1,10 +1,13 @@
-var box = document.querySelector('.output')
-var inputValue = document.querySelector('#input-value')
-var displayGuess = document.querySelector('#guess')
+var button = document.getElementById('guess')
+var newInput = document.getElementById('input-value')
+var showInput = document.querySelector('.output')
+var deleteInput = document.querySelector('.clear')
 
+button.addEventListener('click', function() {
+  var showMe = newInput.value
+  showInput.innerText = showMe;
+})
 
-
-
-displayGuess.addEventListener('click', function(){
-  box.innerText = inputValue.value;
-});
+deleteInput.addEventListener('click', function(){
+  showInput.innerText = "";
+})

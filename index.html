@@ -19,16 +19,22 @@
   </div>
 
   <div>
-    <input id="input-value">
+    <input type="number" min="1" max="100" id="input-value">
   </div>
 
   <div>
     <button id="guess">Guess</button>
-    <button class="clear">Clear</button>
+    <button disabled="true" class="clear">Clear</button>
   </div>
 
   <div>
-    <button class="reset">Reset Game</button>
+    <button disabled="true" class="reset">Reset Game</button>
+  </div>
+
+  <div>
+    <input id="min" placeholder="min">
+    <input id="max" placeholder="max">
+    <button class="set-min-max">Set Range</button>
   </div>
 
   <script src="script.js"></script>

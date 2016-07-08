@@ -1,34 +1,69 @@
 body {
   background: url(images/numbers.jpg) no-repeat;
   background-size: cover;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 900;
 }
 
 section {
-  background: grey;
-  margin-top: 5%;
-  margin-left: 40%;
+  background-color: #C2B79B;
+  margin: auto;
+  margin-top: 70px;
   height: 500px;
-  width: 300px;
-}
-
-#guess, #input-value {
-  margin-left: 40%;
+  width: 650px;
+  border: 3px solid white;
+  position: relative;
 }
 
 h1 {
   font-size: 50px;
+  margin-top: 20px;
   margin-bottom: 2%;
   text-align: center;
 }
 
-.output {
-  margin-bottom: 2%;
-  width: 10px;
-  height: 10px;
-  color: black;
+h2{
+  font-size: 30px;
+  margin-top: 15px;
 }
 
-article {
+.output {
+  width: 15px;
+  height: 52px;
+  margin: auto;
+  color: black;
+  font-size: 300%;
+}
+
+.message{
+  font-size: 150%;
+  height: 20px;
+  width: 100%;
+  margin-left: 137px;
+}
+
+.instructions{
+  position: relative;
+  width: 413px;
+  margin-left: 140px;
+  }
+
+p {
+  font-size: 20px;
+}
+
+li {
+  font-family: 'Amatica SC', cursive;
+  font-size: 19px;
+  margin-top: 5px;
+}
+/* #guess, #input-value {
+  height: 20px;
+  width: 50px;
+  margin:auto;
+} */
+
+/* article {
   display: inline;
   margin: auto;
-}
+} */

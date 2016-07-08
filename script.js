@@ -28,7 +28,10 @@ button.addEventListener('click', function () {
   var userNum = newInput.value;
   var convertedUserNum = parseInt(userNum, 10);
 
-  if (convertedUserNum > maxNum || convertedUserNum < minNum) {
+  if (newInput.value.length > 8) {
+    return showInput.innerText = "😡"
+    return userHint.innerText = ""
+  }else if (convertedUserNum > maxNum || convertedUserNum < minNum) {
     return userHint.innerText = "Please guess a number between " + minNum + "-" + maxNum + ".";
   }else if (convertedUserNum < randomNumber) {
     return userHint.innerText = "Sorry, that guess is too low. Try a higher number.";

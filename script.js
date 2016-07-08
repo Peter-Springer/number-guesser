@@ -37,7 +37,7 @@ button.addEventListener('click', function () {
   } else if (convertedUserNum === randomNumber) {
     alterRange();
     randomNumber = numGenerator();
-    return userHint.innerText = "Correct";
+    return userHint.innerText = "Correct!";
   } else if (isNaN(parseInt('newInput.value'))){
     return userHint.innerText = "Sorry, your guess is not a number.";
   }
@@ -48,7 +48,7 @@ deleteInput.addEventListener('click', function() {
   deleteInput.disabled = true;
 });
 
-  resetGame.addEventListener('click', function () {
+resetGame.addEventListener('click', function () {
   deleteInput.disabled = true;
   resetGame.disabled = true;
   showInput.innerText = "";
@@ -64,7 +64,7 @@ rangeButton.addEventListener('click', function () {
   minNum = parseInt(minInput.value);
   maxNum = parseInt(maxInput.value);
   if (minNum > maxNum) {
-    return userHint.innerText = "Please enter a valid range."
+    return userHint.innerText = "Please enter a valid range.";
   }
   randomNumber = numGenerator();
 });

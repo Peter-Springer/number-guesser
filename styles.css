@@ -30,6 +30,7 @@ section {
 }
 
 .clear {
+  color: ;
   position: absolute;
   left: 55%;
   bottom: 40%;
@@ -63,7 +64,7 @@ h1 {
   font-size: 28px;
   margin-bottom: 2%;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 36px;
   color: white;
 }
 

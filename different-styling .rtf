@@ -1,0 +1,146 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 body \{\
+  background: url(images/numbers.jpg) no-repeat;\
+  background-size: cover;\
+  font-family: 'Amatic SC', cursive;\
+  font-weight: 900;\
+\}\
+\
+section \{\
+  background-color: #C2B79B;\
+  margin: auto;\
+  margin-top: 60px;\
+  height: 280px;\
+  width: 650px;\
+  border: 3px solid white;\
+  position: relative;\
+\}\
+\
+h1 \{\
+  font-size: 50px;\
+  margin-top: 20px;\
+  margin-bottom: 2%;\
+  text-align: center;\
+\}\
+\
+/* h2\{\
+  font-size: 30px;\
+  margin-top: 15px;\
+\} */\
+\
+.output \{\
+  width: 15px;\
+  height: 52px;\
+  margin: auto;\
+  color: black;\
+  font-size: 300%;\
+\}\
+\
+.message\{\
+  font-size: 150%;\
+  height: 20px;\
+  width: 100%;\
+  margin-left: 137px;\
+\}\
+\
+.instructions\{\
+  outline: 2px solid red;\
+  display: block;\
+  background-color: #C2B79B;\
+  /* position: relative; */\
+  width: 600px;\
+  height: 200px;\
+  /* margin-left: 140px; */\
+  \}\
+\
+\
+li \{\
+  font-family: 'Amatica SC', cursive;\
+  font-size: 19px;\
+  margin-top: 5px;\
+\}\
+/* #guess, #input-value \{\
+  height: 20px;\
+  width: 50px;\
+  margin:auto;\
+\} */\
+\
+/* article \{\
+  display: inline;\
+  margin: auto;\
+\} */\
+\
+\
+\
+HTML\
+\
+<!DOCTYPE html>\
+\
+<html>\
+<head>\
+  <meta charset="utf-8">\
+  <title>Let's Play a Game!!</title>\
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css'>\
+  <link href='https://fonts.googleapis.com/css?family=Amatica+SC' rel='stylesheet' type='text/css'>\
+  <link rel="stylesheet" href="reset.css" media="screen">\
+  <link rel="stylesheet" href="styles.css" media="screen">\
+</head>\
+\
+<body>\
+  <section>\
+\
+  <h1>Guess What Number I'm Thinking Of...</h1>\
+\
+  <div class="output"></div>\
+\
+  <div>\
+    <p class="message"></p>\
+  </div>\
+\
+  <div>\
+    <input type="number" min="1" max="100" id="input-value">\
+  </div>\
+\
+  <button id="guess">Guess</button>\
+\
+  <article>\
+  <div>\
+    <button disabled="true" class="clear">Clear</button>\
+  </div>\
+  <div>\
+    <button disabled="true" class="reset">Reset Game</button>\
+  </div>\
+</article>\
+\
+  <div>\
+    <input id="min" placeholder="min">\
+    <input id="max" placeholder="max">\
+    <button class="set-min-max">Set Range</button>\
+  </div>\
+\
+  <script src="script.js"></script>\
+</section>\
+\
+<ol class="instructions">\
+  <h2>Instruction on how to play the game:</h2>\
+\
+  <li>1. Pick a number between 1-100 and press GUESS </li>\
+  <li>2. OR set a MIN and MAX range you would like\
+    play at.\
+  </li>\
+  <li>3. Keep guessing, don't give up. </li>\
+  <li>4. If you get it correct, it gets a little harder.\
+    Try it again but the MIN and MAX range will increase\
+    and decrease by 10. GOOD LUCK!\
+  </li>\
+  <li>5. Reset the Game and Start over. </li>\
+</ol>\
+</body>\
+\
+</html>\
+}

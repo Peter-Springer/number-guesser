@@ -22,28 +22,36 @@ function alterRange() {
 }
 
 button.addEventListener('click', function () {
+  // chunk out into a function
   deleteInput.disabled = false;
   resetGame.disabled = false;
+
   showInput.innerText = newInput.value;
   var userNum = newInput.value;
   var convertedUserNum = parseInt(userNum, 10);
 
+  // checkValue();
+
   if (newInput.value.length > 8) {
-    return showInput.innerText = "😡"
+    showInput.innerText = "😡"
     return userHint.innerText = ""
-  }else if (convertedUserNum > maxNum || convertedUserNum < minNum) {
-    return userHint.innerText = "Please guess a number between " + minNum + "-" + maxNum + ".";
-  }else if (convertedUserNum < randomNumber) {
-    return userHint.innerText = "Sorry, that guess is too low. Try a higher number.";
-  } else if (convertedUserNum > randomNumber) {
-    return userHint.innerText = "Sorry, that guess is too high. Try a lower number.";
-  } else if (convertedUserNum === randomNumber) {
+  }
+  if (convertedUserNum > maxNum || convertedUserNum < minNum) {
+    return userHint.innerText = "Please guess a number between " + minNum + "-" + maxNum + "."; }
+
+  if (convertedUserNum < randomNumber) {
+    return userHint.innerText = "Sorry, that guess is too low. Try a higher number.";}
+
+  if (convertedUserNum > randomNumber) {
+    return userHint.innerText = "Sorry, that guess is too high. Try a lower number.";}
+
+  if (convertedUserNum === randomNumber) {
     alterRange();
     randomNumber = numGenerator();
-    return userHint.innerText = "Correct!, try it again the MIN and MAX range has increased and decreased by 10";
-  } else if (isNaN(parseInt('newInput.value'))){
-    return userHint.innerText = "Sorry, your guess is not a number.";
-  }
+    return userHint.innerText = "Correct!, try it again the MIN and MAX range has increased and decreased by 10";}
+
+  if (isNaN(parseInt('newInput.value'))){
+    return userHint.innerText = "Sorry, your guess is not a number.";}
 });
 
 deleteInput.addEventListener('click', function() {

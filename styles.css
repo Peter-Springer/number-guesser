@@ -17,32 +17,32 @@ section {
 }
 
 
-#guess {
+.guess-button {
   position: absolute;
   left: 45%;
   bottom: 40%;
 }
 
-#input-value {
+.user-input {
   position: absolute;
   left: 35%;
   bottom: 40%;
 }
 
-.clear {
+.clear-button {
   color: ;
   position: absolute;
   left: 55%;
   bottom: 40%;
 }
 
-.reset {
+.reset-button {
   position: absolute;
   left: 45%;
   bottom: 20%;
 }
 
-.set-min-max {
+.range-button {
   position: absolute;
   left: 65%;
   bottom: 30%;
@@ -68,7 +68,7 @@ h1 {
   color: white;
 }
 
-.output {
+.user-input-display {
   font-size: 40px;
   width: 10px;
   height: 10px;
@@ -82,7 +82,7 @@ article {
   margin: auto;
 }
 
-.message {
+.user-hint-message {
   text-align: center;
   margin-top: 50px;
   color: white;

@@ -1,4 +1,4 @@
-var button = document.getElementById('guess');
+var guessButton = document.getElementById('guess');
 var newInput = document.getElementById('input-value');
 var showInput = document.querySelector('.output');
 var deleteInput = document.querySelector('.clear');
@@ -21,16 +21,20 @@ function alterRange() {
   minNum -= 10;
 }
 
-button.addEventListener('click', function () {
-  // chunk out into a function
+function resetRange() {
+  minNum = parseInt(minInput.value = 1);
+  maxNum = parseInt(maxInput.value = 100);
+  maxInput.value = "";
+  minInput.value = "";
+}
+
+guessButton.addEventListener('click', function () {
   deleteInput.disabled = false;
   resetGame.disabled = false;
 
   showInput.innerText = newInput.value;
   var userNum = newInput.value;
   var convertedUserNum = parseInt(userNum, 10);
-
-  // checkValue();
 
   if (newInput.value.length > 8) {
     showInput.innerText = "😡"
@@ -62,13 +66,14 @@ deleteInput.addEventListener('click', function() {
 resetGame.addEventListener('click', function () {
   deleteInput.disabled = true;
   resetGame.disabled = true;
-  button.disabled = false;
+  guessButton.disabled = false;
   rangeButton.disabled = false;
   showInput.innerText = "";
   newInput.value = "";
   userHint.innerText = "";
   minInput.value = "";
   maxInput.value = "";
+  resetRange();
   randomNumber = numGenerator();
 });
 
@@ -77,7 +82,7 @@ rangeButton.addEventListener('click', function () {
   minNum = parseInt(minInput.value);
   maxNum = parseInt(maxInput.value);
   if (minNum > maxNum) {
-    button.disabled = true;
+    guessButton.disabled = true;
     resetGame.disabled = false;
     rangeButton.disabled = true;
     return userHint.innerText = "Please enter a valid range.";

@@ -14,35 +14,27 @@
 
     <h1>Can you guess the right number?</h1>
 
-    <div class="output"></div>
+    <div class="user-input-display output"></div>
 
-    <div>
-      <p class="message"></p>
-    </div>
+    <p class="user-hint-message message"></p>
 
-    <div>
-      <input type="number" min="1" max="100" id="input-value">
-    </div>
+    <input class="user-input" type="number" min="1" max="100" id="input-value">
 
-    <button id="guess">Guess</button>
+    <button class="guess-button" id="guess">Guess</button>
 
     <article>
-      <div>
-        <button disabled="true" class="clear">Clear</button>
-      </div>
-      <div>
-        <button disabled="true" class="reset">Reset Game</button>
-      </div>
+      <button disabled="true" class="clear clear-button">Clear</button>
+
+      <button class="reset reset-button" disabled="true">Reset Game</button>
     </article>
 
-    <div>
-      <input type="number" class="set-min" id="min" placeholder="min">
-      <input type="number" class="set-max" id="max" placeholder="max">
-      <button class="set-min-max">Set Range</button>
-    </div>
+    <input type="number" class="set-min" id="min" placeholder="min">
+
+    <input type="number" class="set-max" id="max" placeholder="max">
+
+    <button class="set-min-max range-button">Set Range</button>
 
     <script src="script.js"></script>
   </section>
 </body>
-
 </html>
